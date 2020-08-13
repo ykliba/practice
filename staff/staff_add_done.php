@@ -5,5 +5,9 @@
   <title>practice</title>
 </head> 
 <body>
-  
+
+<?php
+
+
+?>
 </body>
