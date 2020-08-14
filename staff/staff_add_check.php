@@ -37,7 +37,7 @@ if($staff_name == '' || $staff_pass == '' || $staff_pass != $staff_pass2) {
   echo '<input type = "button" onclick = "history.back()" value = "戻る">';
   echo '</form>';
 } else {
-  $staff_pass = password_hash($staff_pass,PASSWORD_DEFAULT);
+  $staff_pass = md5($staff_pass);
   echo '<form method = "post" action = "staff_add_done.php">';
   echo '<input type = "hidden" name = "name" value = "'.$staff_name.'">';
   echo '<input type = "hidden" name = "pass" value = "'.$staff_pass.'">';
