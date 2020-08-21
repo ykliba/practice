@@ -8,7 +8,7 @@
 
 <?php
 
-$staff_code = $POST['code'];
+$staff_code = $_POST['code'];
 $staff_name = $_POST['name'];
 $staff_pass = $_POST['pass'];
 $staff_pass2 = $_POST['pass2'];

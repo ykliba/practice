@@ -10,8 +10,6 @@
 
 try {
  $staff_code = $_POST['staffcode'];
-
-  $staff_code = htmlspecialchars($staff_name,ENT_QUOTES,'UTF-8');
   
   $dsn='mysql:dbname=practice;host=localhost;charset=utf8';
   $user = 'root';
@@ -55,4 +53,5 @@ catch(Exception $e) {
 <input type = "button" onclick = "history.back()" value = "戻る">
 <input type = "submit" value = "OK">
 </form>
+<!-- <?php var_dump($data); ?> -->
 <body>
