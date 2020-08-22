@@ -22,7 +22,7 @@ try {
 
   echo 'スタッフ一覧<br><br>';
 
-  echo '<form method = "post" action = "staff_edit.php">';
+  echo '<form method = "post" action = "staff_branch.php">';
   while(true) {
     $rec = $stmt -> fetch(PDO::FETCH_ASSOC);
     if($rec == false) {
@@ -32,7 +32,8 @@ try {
     echo $rec['name'];
     echo '<br>';
   }
-  echo '<input type = "submit" value = "修正">';
+  echo '<input type = "submit" name = "edit" value = "修正">';
+  echo '<input type = "submit" name = "delete" value = "削除">';
   echo '</form>';
 
 } catch (Exception $e) {
