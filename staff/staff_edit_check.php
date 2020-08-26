@@ -18,7 +18,7 @@ $staff_pass = htmlspecialchars($staff_pass,ENT_QUOTES,'UTF-8');
 $staff_pass2 = htmlspecialchars($staff_pass2,ENT_QUOTES,'UTF-8');
 
 if($staff_name == '') {
-  echo 'スタッフ名が入力さてれていません<br>';
+  echo 'スタッフ名が入力さてれていません。<br>';
 } else {
   echo 'スタッフ名:';
   echo $staff_name;
@@ -26,7 +26,7 @@ if($staff_name == '') {
 }
 
 if($staff_pass == '') {
-  echo 'パスワードが入力されていません<br>';
+  echo 'パスワードが入力されていません。<br>';
 }
 
 if($staff_pass != $staff_pass2) {
