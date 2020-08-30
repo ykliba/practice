@@ -20,7 +20,7 @@ try {
 
   $dbh = null;
 
-  echo 'スタッフ一覧<br><br>';
+  echo 'スタッフ一覧:<br><br>';
 
   echo '<form method = "post" action = "staff_branch.php">';
   while(true) {
